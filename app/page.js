@@ -265,7 +265,7 @@ function page() {
               <a href="https://github.com/deepak7857/Niyalservices.git">
                 <img
                   className="w-full h-48 object-cover"
-                  src="pathfinder.png"
+                  src="Pathfinder.png"
                   alt="project_image"
                 />
               </a>
