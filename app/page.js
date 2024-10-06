@@ -165,13 +165,13 @@ function page() {
                 Competitive Programming
               </li>
               <li className=" font-bold text-lg md:text-3xl text-gray-800">
-                Reading
-              </li>
-              <li className=" font-bold text-lg md:text-3xl text-gray-800">
                 Web Development
               </li>
               <li className=" font-bold text-lg md:text-3xl text-gray-800">
-                Coding
+                Movies
+              </li>
+              <li className=" font-bold text-lg md:text-3xl text-gray-800">
+                Webseries
               </li>
               <li className=" font-bold text-lg md:text-3xl text-gray-800">
                 cricket
