@@ -58,7 +58,7 @@ function page() {
       </nav>
 
       <section className="lg:py-16 bg-gray-200 min-h-screen ">
-        <div className="grid grid-cols-1 sm:grid-cols-12 ml-5 md:mt-6">
+        <div className="grid grid-cols-1 sm:grid-cols-12 ml-5 md:mt-6 justify-between p-20 items-center">
           <motion.div
             initial={{ opacity: 0, scale: 0.5 }}
             animate={{ opacity: 1, scale: 1 }}
