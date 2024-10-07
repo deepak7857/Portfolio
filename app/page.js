@@ -76,9 +76,9 @@ function page() {
                 sequence={[
                   "DEEPAK KUMAR",
                   1000,
-                  "FULL-STAKE  DEVELOPER",
+                  "FULL-STACK  DEVELOPER",
                   1000,
-                  "MERN-STAKE DEVELOPER",
+                  "MERN-STACK DEVELOPER",
                   1000,
                 ]}
                 wrapper="span"
