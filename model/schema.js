@@ -16,7 +16,7 @@ message:{
 
 }
 },{timestamps:true})
-// ... existing code ...
+
 const User = mongoose.models.User || mongoose.model('User', UserSchema);
 
 module.exports = User;

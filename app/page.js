@@ -314,7 +314,7 @@ function page() {
               <div className="text-xl capitalize mt-4 mb-1.5 text-white">
                 <h3><p>The URL Shortener app is a simple yet powerful tool that allows users to shorten long web URLs into compact, easy-to-share links. The app is designed to enhance the user experience by providing a clean and efficient way to manage links. It tracks click data, making it perfect for analyzing link performance, whether for personal use or marketing purposes.</p></h3>
               </div>
-              <div class="mt-4 text-center">
+              <div className="mt-4 text-center">
                 <Link
                   href="#"
                   target="_blank"

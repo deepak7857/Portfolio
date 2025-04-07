@@ -1,5 +1,7 @@
 "use client";
+
 import React, { useState } from 'react';
+import axios from 'axios';
 
 function ConForm() {
   const [fullName, setFullName] = useState('');
@@ -8,7 +10,7 @@ function ConForm() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    
+
     if (!fullName || !email || !message) {
       alert('Please fill all the fields');
       return;
@@ -17,27 +19,35 @@ function ConForm() {
     const body = { fullName, email, message };
 
     try {
-      const response = await fetch(`${process.env.NEXT_PUBLIC_URL}api/form`, {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(body),
-      });
+      const headers = { 
+        'Content-Type': 'application/json',
+      };
+      const sendmail = await axios.post(
+        `${process.env.NEXT_PUBLIC_URL}api/nodemailer`,
+        JSON.stringify(body), 
+        {
+          headers: headers, 
+        }
+      );
+      const response = await axios.post(
+        `${process.env.NEXT_PUBLIC_URL}api/form`,
+        body,
+        {
+          headers: {
+            'Content-Type': 'application/json',
+          },
+        }
+      );
 
-      const res = await response.json();
-
-      if (res.success) {
+      if (response.data.success===true && sendmail.data.success===true) {
         alert('Message sent successfully');
       } else {
         alert('Failed to send message');
       }
 
-      // Clear input fields
       setFullName('');
       setEmail('');
       setMessage('');
-      
     } catch (error) {
       console.error('Error sending form:', error);
       alert('An error occurred. Please try again.');
@@ -47,17 +57,17 @@ function ConForm() {
   return (
     <div>
       <form method="POST" onSubmit={handleSubmit}>
-        <h1 className="text-4xl">Contact Me</h1>
+      <h1 className="text-4xl">Contact Me</h1>
         <label className="block mb-1" htmlFor="fullName">
           Full Name:
         </label>
         <input
-          className="border border-gray-300 p-2 mb-2 w-full rounded max-h-dvh "
+          className="border border-gray-300 p-2 mb-2 w-full rounded max-h-dvh"
           type="text"
           id="fullName"
           name="fullName"
           value={fullName}
-          onChange={(e) => setFullName(e.target.value)} 
+          onChange={(e) => setFullName(e.target.value)}
           required
         />
         <label className="block mb-1" htmlFor="email">
@@ -98,5 +108,3 @@ function ConForm() {
 }
 
 export default ConForm;
-
-

@@ -1,5 +1,7 @@
 import connectDB from "@/db/connectDB";
 import User from "@/model/schema";
+
+
 import { NextResponse } from "next/server";
 
 export async function POST(request) {
@@ -25,7 +27,7 @@ export async function POST(request) {
     
     return NextResponse.json(
       { success: true, message: "Message saved successfully" },
-      { status: 200 }
+      { status: 200 ,headers: { "Content-Type": "application/json" } }
     );
 
   } catch (e) {
