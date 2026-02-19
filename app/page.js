@@ -214,7 +214,7 @@ function page() {
               </div>
               <div className="mt-4 text-center">
                 <Link
-                  href="#"
+                  href="https://github.com/deepak7857/Blog-App"
                   target="_blank"
                   className="   w-full text-gray-50 capitalize font-medium p-2 rounded-lg opacity-90 hover:opacity-100 "
                 >
@@ -248,7 +248,7 @@ function page() {
               </div>
               <div className="mt-4 text-center">
                 <Link
-                  href="#"
+                  href="https://github.com/deepak7857/fitMotvieWebApp"
                   target="_blank"
                   className="   w-full text-gray-50 capitalize font-medium p-2 rounded-lg opacity-90 hover:opacity-100 "
                 >
@@ -260,38 +260,7 @@ function page() {
           {/*project 3*/}
 
 
-          <div className="w-72 bg-white shadow-lg duration-300 hover:scale-105">
-            <div className="border-b-4 border-blue-800 relative group p-4">
-              <a href="https://github.com/deepak7857/Niyalservices.git">
-                <img
-                  className="w-full h-48 object-cover"
-                  src="Pathfinder.png"
-                  alt="project_image"
-                />
-              </a>
-
-              <div className="absolute hidden my-4 p-2 text-sm text-white bg-blue-400 rounded-r-lg shadow-lg group-hover:block duration-300 bottom-0 mb- whitespace-nowrap">
-                <p>Click to view Code</p>
-              </div>
-            </div>
-            <div className="bg-gray-800 p-4">
-              <div className="text-xl capitalize font-semibold text-white">
-                <h2>Pathfinder</h2>
-              </div>
-              <div className="text-xl capitalize mt-4 mb-1.5 text-white">
-                <p>The AI-Personalized Roadmap with Career Guidance platform is an intelligent system designed to help individuals identify and achieve their career goals by providing personalized learning . Powered by AI, the platform analyzes user profiles, skills, interests, and career aspirations to create customized roadmaps that guide users toward their desired career paths.  </p>
-              </div>
-              <div className="mt-4 text-center">
-                <Link
-                  href="#"
-                  target="_blank"
-                  className="   w-full text-gray-50 capitalize font-medium p-2 rounded-lg opacity-90 hover:opacity-100 "
-                >
-                  View Project
-                </Link>
-              </div>
-            </div>
-          </div>
+          
           {/* project 4 */}
           <div className="w-72 bg-white shadow-lg duration-300 hover:scale-105">
             <div className="border-b-4 border-blue-800 relative group p-4">
@@ -316,7 +285,7 @@ function page() {
               </div>
               <div className="mt-4 text-center">
                 <Link
-                  href="#"
+                  href="https://github.com/deepak7857/shortUrl"
                   target="_blank"
                   className="   w-full text-gray-50 capitalize font-medium p-2 rounded-lg opacity-90 hover:opacity-100 "
                 ><br></br>
